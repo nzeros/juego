@@ -38,6 +38,10 @@
                         <span class="stat-label">Proyectiles:</span>
                         <span id="playerProjectiles" class="stat-value">5</span>
                     </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Combo:</span>
+                        <span id="playerCombo" class="stat-value">0</span>
+                    </div>
                 </div>
                 
                 <div class="round-info">
@@ -69,6 +73,10 @@
                         <span class="stat-label">Proyectiles:</span>
                         <span id="enemyProjectiles" class="stat-value">5</span>
                     </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Combo:</span>
+                        <span id="enemyCombo" class="stat-value">0</span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -79,7 +87,9 @@
             <div class="game-overlay" id="gameOverlay">
                 <div class="overlay-content">
                     <h2 id="overlayTitle">🥊 ¡COMBATE ÉPICO!</h2>
-                    <p id="overlayMessage">¡Sistema de 3 rounds! El primero en ganar 2 rounds gana el combate.</p>
+                    <p id="overlayMessage">¡Sistema de 3 rounds! El primero en ganar 2 rounds gana el combate.<br/>
+                    <strong>¡NUEVO SISTEMA DE COMBOS!</strong><br/>
+                    Encadena ataques para aumentar el daño. Combos especiales: Puñetazo→Patada→Puñetazo</p>
                     <div class="difficulty-selector">
                         <label for="difficulty">Dificultad:</label>
                         <select id="difficulty">
@@ -117,7 +127,19 @@
                 </div>
                 <div class="control-item">
                     <span class="key">J</span>
-                    <span>Ataque Básico</span>
+                    <span>Puñetazo</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">H</span>
+                    <span>Patada</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">U</span>
+                    <span>Combo Multi-Hit</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">I</span>
+                    <span>Combo Especial</span>
                 </div>
                 <div class="control-item">
                     <span class="key">S</span>
@@ -125,7 +147,7 @@
                 </div>
                 <div class="control-item">
                     <span class="key">K</span>
-                    <span>Súper Ataque</span>
+                    <span>Kamehameha!</span>
                 </div>
                 <div class="control-item">
                     <span class="key">L</span>
