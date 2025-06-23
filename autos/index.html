@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Autos - Carrera Extrema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="score-panel">
+                <div class="score-item">
+                    <span class="label">Puntuación:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Velocidad:</span>
+                    <span id="speed">0</span> km/h
+                </div>
+                <div class="score-item">
+                    <span class="label">Tiempo:</span>
+                    <span id="time">0</span>s
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div class="game-over-screen" id="gameOverScreen">
+            <div class="game-over-content">
+                <h2>¡Juego Terminado!</h2>
+                <div class="final-stats">
+                    <p>Puntuación Final: <span id="finalScore">0</span></p>
+                    <p>Tiempo Total: <span id="finalTime">0</span>s</p>
+                    <p>Velocidad Máxima: <span id="maxSpeed">0</span> km/h</p>
+                </div>
+                <button id="restartBtn" class="restart-btn">Jugar de Nuevo</button>
+            </div>
+        </div>
+        
+        <div class="start-screen" id="startScreen">
+            <div class="start-content">
+                <h1>🏎️ Carrera Extrema</h1>
+                <div class="instructions">
+                    <h3>Instrucciones:</h3>
+                    <p>🔄 Usa las flechas o WASD para moverte</p>
+                    <p>🚗 Evita los obstáculos y otros autos</p>
+                    <p>⚡ Recoge power-ups para bonificaciones</p>
+                    <p>🏁 ¡Sobrevive el mayor tiempo posible!</p>
+                </div>
+                <button id="startBtn" class="start-btn">Comenzar Carrera</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
