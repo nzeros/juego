@@ -2,13 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mis Juegos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Hub - Mis Juegos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>🎮 Juegos disponibles</h1>
-  <ul>
-    <li><a href="snake/">Jugar Snake</a></li>
-    <li><a href="disparos/">Jugar Disparos</a></li>
-  </ul>
+  <div class="matrix-bg"></div>
+  
+  <div class="container">
+    <header>
+      <h1 class="main-title">
+        <span class="glow">🎮</span>
+        GAMING HUB
+        <span class="glow">🎮</span>
+      </h1>
+      <p class="subtitle">Selecciona tu juego y comienza la aventura</p>
+    </header>
+    
+    <main class="games-grid">
+      <div class="game-card" data-game="snake">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="game-icon">🐍</div>
+            <h2 class="game-title">SNAKE</h2>
+            <p class="game-description">Clásico juego de la serpiente. Collect, grow, survive!</p>
+            <div class="play-button">
+              <span>PLAY NOW</span>
+            </div>
+          </div>
+        </div>
+        <a href="snake/" class="game-link"></a>
+      </div>
+      
+      <div class="game-card" data-game="disparos">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="game-icon">🚀</div>
+            <h2 class="game-title">DISPAROS</h2>
+            <p class="game-description">Acción espacial. Destroy enemies, save the galaxy!</p>
+            <div class="play-button">
+              <span>PLAY NOW</span>
+            </div>
+          </div>
+        </div>
+        <a href="disparos/" class="game-link"></a>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Juegos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">∞</span>
+          <span class="stat-label">Diversión</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
