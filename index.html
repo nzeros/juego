@@ -1,112 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧟‍♂️ Zombie Shooter - ¡Sobrevive al Apocalipsis!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mis Juegos</title>
 </head>
 <body>
-    <div class="game-container">
-        <header class="game-header">
-            <h1>🧟‍♂️ ZOMBIE SHOOTER</h1>
-            <div class="game-stats">
-                <div class="stat-item">
-                    <span class="stat-label">Puntuación:</span>
-                    <span id="score" class="stat-value">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Nivel:</span>
-                    <span id="level" class="stat-value">1</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Vida:</span>
-                    <div class="health-bar">
-                        <div id="healthBar" class="health-fill"></div>
-                    </div>
-                    <span id="health" class="stat-value">100</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Escudo:</span>
-                    <span id="shield" class="stat-value">0</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Munición:</span>
-                    <span id="ammo" class="stat-value">30</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-label">Zombies:</span>
-                    <span id="zombiesKilled" class="stat-value">0</span>
-                </div>
-            </div>
-        </header>
-
-        <div class="game-area">
-            <canvas id="gameCanvas" width="800" height="600"></canvas>
-            
-            <div class="game-overlay" id="gameOverlay">
-                <div class="overlay-content">
-                    <h2 id="overlayTitle">🧟‍♂️ ¡APOCALIPSIS ZOMBIE!</h2>
-                    <p id="overlayMessage">Usa WASD para moverte, clic para disparar. ¡Sobrevive el mayor tiempo posible!</p>
-                    <div class="difficulty-selector">
-                        <label for="difficulty">Dificultad:</label>
-                        <select id="difficulty">
-                            <option value="easy">Fácil - Zombies lentos</option>
-                            <option value="medium" selected>Medio - Velocidad normal</option>
-                            <option value="hard">Difícil - Zombies rápidos</option>
-                            <option value="nightmare">Pesadilla - Horda infinita</option>
-                        </select>
-                    </div>
-                    <button id="startButton" class="game-button">¡Comenzar Supervivencia!</button>
-                    <button id="restartButton" class="game-button" style="display: none;">Intentar de Nuevo</button>
-                    <div class="final-stats" id="finalStats" style="display: none;">
-                        <h3>Estadísticas Finales:</h3>
-                        <p>Zombies eliminados: <span id="finalZombies">0</span></p>
-                        <p>Tiempo sobrevivido: <span id="survivalTime">0</span>s</p>
-                        <p>Precisión: <span id="accuracy">0</span>%</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="crosshair" id="crosshair">+</div>
-        </div>
-
-        <div class="controls-info">
-            <h3>Controles de Supervivencia:</h3>
-            <div class="controls-grid">
-                <div class="control-item">
-                    <span class="key">W A S D</span>
-                    <span>Movimiento</span>
-                </div>
-                <div class="control-item">
-                    <span class="key">MOUSE</span>
-                    <span>Apuntar + Disparar</span>
-                </div>
-                <div class="control-item">
-                    <span class="key">R</span>
-                    <span>Recargar</span>
-                </div>
-                <div class="control-item">
-                    <span class="key">SPACE</span>
-                    <span>Pausa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="weapon-info">
-            <h3>🔫 Arma Actual: <span id="weaponName">Pistola</span></h3>
-            <div class="weapon-stats">
-                <span>Daño: <span id="weaponDamage">25</span></span>
-                <span>Cadencia: <span id="weaponRate">Normal</span></span>
-            </div>
-        </div>
-
-        <footer class="game-footer">
-            <p>¡Sobrevive al apocalipsis zombie! 🎯 Desarrollado con ❤️</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+  <h1>🎮 Juegos disponibles</h1>
+  <ul>
+    <li><a href="snake/">Jugar Snake</a></li>
+    <li><a href="disparos/">Jugar Disparos</a></li>
+  </ul>
 </body>
-</html> 
+</html>
