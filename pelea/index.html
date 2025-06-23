@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥊 Stickman Fight - Combate Épico</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="header-top">
+                <a href="../menu.html" class="back-to-menu">
+                    <span class="back-icon">🏠</span>
+                    <span class="back-text">Volver al Menú</span>
+                </a>
+                <h1>🥊 STICKMAN FIGHT</h1>
+            </div>
+            <div class="game-stats">
+                <div class="player-stats">
+                    <h3>JUGADOR</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Vida:</span>
+                        <div class="health-bar player">
+                            <div id="playerHealthBar" class="health-fill"></div>
+                        </div>
+                        <span id="playerHealth" class="stat-value">100</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Ki:</span>
+                        <div class="ki-bar player">
+                            <div id="playerKiBar" class="ki-fill"></div>
+                        </div>
+                        <span id="playerKi" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Proyectiles:</span>
+                        <span id="playerProjectiles" class="stat-value">5</span>
+                    </div>
+                </div>
+                
+                <div class="round-info">
+                    <h2 id="roundTitle">ROUND 1</h2>
+                    <div class="score-display">
+                        <span class="player-score" id="playerScore">0</span>
+                        <span class="vs">VS</span>
+                        <span class="enemy-score" id="enemyScore">0</span>
+                    </div>
+                </div>
+                
+                <div class="enemy-stats">
+                    <h3>ENEMIGO</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Vida:</span>
+                        <div class="health-bar enemy">
+                            <div id="enemyHealthBar" class="health-fill"></div>
+                        </div>
+                        <span id="enemyHealth" class="stat-value">100</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Ki:</span>
+                        <div class="ki-bar enemy">
+                            <div id="enemyKiBar" class="ki-fill"></div>
+                        </div>
+                        <span id="enemyKi" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Proyectiles:</span>
+                        <span id="enemyProjectiles" class="stat-value">5</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">🥊 ¡COMBATE ÉPICO!</h2>
+                    <p id="overlayMessage">¡Sistema de 3 rounds! El primero en ganar 2 rounds gana el combate.</p>
+                    <div class="difficulty-selector">
+                        <label for="difficulty">Dificultad:</label>
+                        <select id="difficulty">
+                            <option value="easy">Fácil - Enemigo lento</option>
+                            <option value="medium" selected>Medio - Velocidad normal</option>
+                            <option value="hard">Difícil - Enemigo rápido</option>
+                            <option value="nightmare">Pesadilla - Enemigo experto</option>
+                        </select>
+                    </div>
+                    <button id="startButton" class="game-button">¡Comenzar Combate!</button>
+                    <button id="nextRoundButton" class="game-button" style="display: none;">Siguiente Round</button>
+                    <button id="restartButton" class="game-button" style="display: none;">Nuevo Combate</button>
+                    <div class="round-result" id="roundResult" style="display: none;">
+                        <h3 id="roundResultTitle">¡Round Ganado!</h3>
+                        <p id="roundResultMessage">Has ganado este round</p>
+                    </div>
+                    <div class="final-result" id="finalResult" style="display: none;">
+                        <h3 id="finalResultTitle">¡Victoria!</h3>
+                        <p id="finalResultMessage">Has ganado el combate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-info">
+            <h3>Controles de Combate:</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <span class="key">A / D</span>
+                    <span>Moverse</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">W</span>
+                    <span>Saltar</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">J</span>
+                    <span>Ataque Básico</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">S</span>
+                    <span>Cargar Ki</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">K</span>
+                    <span>Súper Ataque</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">L</span>
+                    <span>Proyectil de Energía</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="game-footer">
+            <p>¡Domina el ring con combos devastadores! 🥊 Desarrollado con ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

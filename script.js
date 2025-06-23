@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
         statValues.forEach((stat, index) => {
             if (index === 0) { // Games count
                 let count = 0;
-                const target = 2;
+                const target = 3;
                 const increment = () => {
                     if (count < target) {
                         count++;
