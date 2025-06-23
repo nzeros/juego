@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Snake Game - ¡Juego Entretenido!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🐍 SNAKE GAME</h1>
+            <div class="game-info">
+                <div class="score-container">
+                    <span>Puntuación: </span>
+                    <span id="score">0</span>
+                </div>
+                <div class="level-container">
+                    <span>Nivel: </span>
+                    <span id="level">1</span>
+                </div>
+                <div class="high-score-container">
+                    <span>Récord: </span>
+                    <span id="highScore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">¡Bienvenido!</h2>
+                    <p id="overlayMessage">Usa las flechas o WASD para moverte. ¡Come las manzanas y evita chocarte!</p>
+                    <div class="difficulty-selector">
+                        <label for="difficulty">Dificultad:</label>
+                        <select id="difficulty">
+                            <option value="easy">Fácil</option>
+                            <option value="medium" selected>Medio</option>
+                            <option value="hard">Difícil</option>
+                            <option value="extreme">Extremo</option>
+                        </select>
+                    </div>
+                    <button id="startButton" class="game-button">¡Iniciar Juego!</button>
+                    <button id="restartButton" class="game-button" style="display: none;">Jugar de Nuevo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-info">
+            <h3>Controles:</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <span class="key">↑ ↓ ← →</span>
+                    <span>Flechas</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">W A S D</span>
+                    <span>WASD</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">SPACE</span>
+                    <span>Pausa</span>
+                </div>
+                <div class="control-item">
+                    <span class="key">R</span>
+                    <span>Reiniciar</span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="game-footer">
+            <p>¡Disfruta del juego! 🎮</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
