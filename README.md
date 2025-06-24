@@ -1,5 +1,7 @@
 # 🎮 Gaming Hub - Colección de Juegos Web
 
+Entrar a la web: https://nzeros.github.io/juego/menu.html
+
 ¡Bienvenido al **Gaming Hub**! Una colección épica de juegos web desarrollados con HTML5, CSS3 y JavaScript puro. Experimenta nostalgia retro con gráficos modernos y mecánicas de juego avanzadas.
 
 ![Gaming Hub](https://img.shields.io/badge/Gaming%20Hub-4%20Juegos-brightgreen)
